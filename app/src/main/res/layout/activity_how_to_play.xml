@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:minHeight="@dimen/toolbar_height"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backImageButton"
+            android:src="@drawable/menu_24px"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="@dimen/back_button_margin_right"
+            android:scaleType="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/back_button_description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarModeText"
+            android:text="@string/toolbar_mode_text"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/toolbar_text_size"
+            android:textStyle="bold"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/basics_title_label_text"
+        android:id="@+id/basicTitleTextView"
+        android:gravity="center"
+        android:textSize="@dimen/label_text_size"
+        android:padding="@dimen/label_padding"
+        android:textColor="@color/text_color"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/basicsLine1HorizontalLinearLayout"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iconContainerVerticalLinearLayout"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plusIconImageView"
+                android:src="@drawable/circle_plus_32px"
+                android:paddingBottom="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/minusIconImageView"
+                android:src="@drawable/circle_minus_32px" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_minus_how_to_text"
+            android:id="@+id/addMinusHowToEndTextView"
+            android:textSize="@dimen/how_to_text_size"
+            android:paddingLeft="@dimen/label_padding"
+            android:textColor="@color/text_color"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/basicsLine2HorizontalLinearLayout"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iconSwipeContainerVerticalLinearLayout"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/swipeIconImageView"
+                android:src="@drawable/swipe_orange_32px"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/swipe_how_to_text"
+            android:id="@+id/swipeHowToEndTextView"
+            android:textSize="@dimen/how_to_text_size"
+            android:paddingLeft="@dimen/label_padding"
+            android:textColor="@color/text_color"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/targetNumberInfoTextView"
+        android:text="@string/target_number_info_text"
+        android:textSize="@dimen/how_to_text_size"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:padding="10dp"/>
+</LinearLayout>

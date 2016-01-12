@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Numtar</string>
+    <string name="normalModeButton_text">Normal Mode</string>
+    <string name="continuousModeButton_text">Continuous Mode</string>
+    <string name="hiddenModeButton_text">Hidden Mode</string>
+    <string name="howToPlayButton_text">How to Play</string>
+    <string name="setting_button_description_text">Settings</string>
+    <string name="back_button_description">Back</string>
+    <string name="theme_text">Theme</string>
+    <string name="night_theme_button_text">Night</string>
+    <string name="orange_theme_button_text">Orange</string>
+    <string name="toolbar_mode_text">Mode</string>
+    <string name="num_goal_text">goal</string>
+    <string name="current_total_text">current</string>
+    <string name="num_choose_text">7</string>
+    <string name="time_label_text">Time:</string>
+    <string name="goal_label_text">Goal:</string>
+    <string name="current_label_text">Current Total:</string>
+    <string name="turn_label_text">Turn:</string>
+
+    <string name="turn_text">turn</string>
+    <string name="main_time_text">time</string>
+
+    <string name="basics_title_label_text">Basics</string>
+    <string name="add_minus_how_to_text">Tap the plus/minus buttons to add/subtract the choice number to or
+        from the current total </string>
+    <string name="swipe_how_to_text">Swipe the screen to get a new choice number</string>
+    <string name="target_number_info_text">Target number is always a random number between
+        -100 and 100</string>
+</resources>

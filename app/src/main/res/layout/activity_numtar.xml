@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color" >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:minHeight="@dimen/toolbar_height"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameText"
+            android:text="@string/app_name"
+            android:textColor="@color/button_text_color"
+            android:textSize="@dimen/toolbar_text_size"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/settings_button_margin_right"
+            android:id="@+id/settingsImageButton"
+            android:src="@drawable/ic_settings_white_24dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/setting_button_description_text"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/normalModeButton_text"
+        android:id="@+id/normalModeButton"
+        android:textColor="@color/button_text_color"
+        android:background="@color/button_background_color"
+        android:textSize="@dimen/button_text_size"
+        android:layout_margin="@dimen/button_margin"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/continuousModeButton_text"
+        android:id="@+id/continuousModeButton"
+        android:textColor="@color/button_text_color"
+        android:background="@color/button_background_color"
+        android:textSize="@dimen/button_text_size"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hiddenModeButton_text"
+        android:id="@+id/hiddenModeButton"
+        android:textColor="@color/button_text_color"
+        android:background="@color/button_background_color"
+        android:textSize="@dimen/button_text_size"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/howToPlayButton_text"
+        android:id="@+id/howToPlayButton"
+        android:textColor="@color/button_text_color"
+        android:background="@color/button_background_color"
+        android:textSize="@dimen/button_text_size"
+        android:layout_marginLeft="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:textStyle="bold" />
+</LinearLayout>
